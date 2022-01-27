@@ -123,18 +123,4 @@ public class RadioController implements Radio{
   /** 
   * @return String
   */
-  public String info(){
-    String info = "";
-    if(this.FM)
-    {
-      info += "\nFrecuencia: FM.";
-      info += "\nEmisora: " + this.actualFM + "MHz";
-    }
-    else
-    {
-      info += "\nFrecuencia: AM.";
-      info += "\nEmisora: " + this.actualAM + "KHz";
-    }
-    return info;
-  }
 }
