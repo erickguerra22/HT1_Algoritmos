@@ -5,7 +5,7 @@ Autor2: Elías Alvarado 21808
 Fecha: 26 de enero del 2022
 */
 
-import java.util.*;
+import java.util.Scanner;
 
 class Main {
   /** 
@@ -161,7 +161,7 @@ class Main {
       return respuesta;
   }
   public static String info(){
-    String info = "";
+    String info = "\n---Estado---";
     if(controlador.getTipoSenal())
     {
       info += "\nFrecuencia: FM.";
