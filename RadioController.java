@@ -6,7 +6,7 @@ Fecha: 26 de enero del 2022
 */
 
 public class RadioController implements Radio{
-  public RadioContorller(){}
+  public RadioController(){}
   private boolean encendido = false;
   private Float[] favoritas = new Float[12];
   private int actualAM = 530;
