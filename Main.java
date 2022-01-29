@@ -1,7 +1,7 @@
 /*
 Clase Main. Sera la clase que conecte el programa con el usuario.
 Autor1: Erick Guerra | 21781
-Autor2: Elías Alvarado 21808
+Autor2: Elías Alvarado | 21808
 Fecha: 26 de enero del 2022
 */
 
@@ -138,7 +138,7 @@ class Main {
     System.out.println("\n¡Gracias por utilizar nuestro simulador de radio! Esperamos que haya sido de tu agrado.");
     
   }
-  
+
   /** 
   * @param pregunta
   * @param opciones
