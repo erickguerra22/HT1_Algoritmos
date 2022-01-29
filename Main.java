@@ -12,6 +12,10 @@ class Main {
   * @param args
   */
   private static RadioController controlador = new RadioController();
+  
+  /** 
+   * @param args
+   */
   public static void main(String[] args)
   {
     Scanner scanner = new Scanner(System.in);
@@ -134,6 +138,7 @@ class Main {
     System.out.println("\n¡Gracias por utilizar nuestro simulador de radio! Esperamos que haya sido de tu agrado.");
     
   }
+  
   /** 
   * @param pregunta
   * @param opciones
@@ -160,6 +165,10 @@ class Main {
       }
       return respuesta;
   }
+
+  /**
+   * @return String
+   */
   public static String info(){
     String info = "\n---Estado---";
     if(controlador.getTipoSenal())
