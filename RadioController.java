@@ -120,7 +120,4 @@ public class RadioController implements Radio{
   public boolean comprobarEncendida(){
     return encendido;
   }
-  /** 
-  * @return String
-  */
 }
