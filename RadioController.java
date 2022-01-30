@@ -78,7 +78,7 @@ public class RadioController implements Radio{
   @Override
   public void subirEmisora() {
     if(FM) {
-      if(actualFM == 107.9)
+      if(actualFM == 107.9f)
         actualFM = 87.9f;
       else
         actualFM += 0.2;
@@ -88,11 +88,11 @@ public class RadioController implements Radio{
       else
         actualAM += 10;
     }
-	}
+  }
   @Override
   public void bajarEmisora(){
     if(FM) {
-      if(actualFM == 87.9)
+      if(actualFM == 87.9f)
         actualFM = 107.9f;
       else
         actualFM -= 0.2;
@@ -119,5 +119,21 @@ public class RadioController implements Radio{
   @Override
   public boolean comprobarEncendida(){
     return encendido;
+  }
+
+  public boolean isEncendido() {
+	return encendido;
+  }
+  public Float[] getFavoritas() {
+	return favoritas;
+  }	
+  public int getActualAM() {
+	return actualAM;
+  }
+  public float getActualFM() {
+	return actualFM;
+  }
+  public boolean isFM() {
+	return FM;
   }
 }

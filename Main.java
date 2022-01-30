@@ -163,6 +163,7 @@ class Main {
           System.out.println("\nRepuesta no valida. Ingrese solamente numeros.\n");
           respuesta = pregunta(pregunta, opciones);
       }
+      scanner.close();
       return respuesta;
   }
 
