@@ -1,7 +1,7 @@
 /*
 Clase Main. Sera la clase que conecte el programa con el usuario.
 Autor1: Erick Guerra | 21781
-Autor2: ElÃ­as Alvarado | 21808
+Autor2: Elías Alvarado | 21808
 Fecha: 26 de enero del 2022
 */
 
@@ -25,7 +25,7 @@ class Main {
     boolean buclePrincipal = true;
     boolean bucle = true;
 
-    System.out.println("Â¡Bienvenido! Este es un simulador de una radio convencional.\nEn la cual podra escuchar las distintas emisoras de las dos frecuencias de radio (AM y FM).\nAdemas, podra tener una lista de emisoras favoritas para reproducirlas cuando lo desee.");
+    System.out.println("¡Bienvenido! Este es un simulador de una radio convencional.\nEn la cual podra escuchar las distintas emisoras de las dos frecuencias de radio (AM y FM).\nAdemas, podra tener una lista de emisoras favoritas para reproducirlas cuando lo desee.");
 
     while(buclePrincipal)
     {
@@ -53,7 +53,7 @@ class Main {
         case 3:
         if(controlador.comprobarEncendida())
         {
-          respuesta = pregunta("Â¿Que desea hacer?\n1. Subir emisora.\n2. Bajar emisora.\nRepuesta: ", 2);
+          respuesta = pregunta("¿Que desea hacer?\n1. Subir emisora.\n2. Bajar emisora.\nRepuesta: ", 2);
           if(respuesta == 1) controlador.subirEmisora();
           else controlador.bajarEmisora();
         }
@@ -135,7 +135,7 @@ class Main {
       if(controlador.comprobarEncendida()) System.out.println(info());
     }
     scanner.close();
-    System.out.println("\nÂ¡Gracias por utilizar nuestro simulador de radio! Esperamos que haya sido de tu agrado.");
+    System.out.println("\n¡Gracias por utilizar nuestro simulador de radio! Esperamos que haya sido de tu agrado.");
     
   }
 
