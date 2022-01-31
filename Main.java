@@ -53,7 +53,7 @@ class Main {
         case 3:
         if(controlador.comprobarEncendida())
         {
-          respuesta = pregunta("�Que desea hacer?\n1. Subir emisora.\n2. Bajar emisora.\nRepuesta: ", 2);
+          respuesta = pregunta("¿Que desea hacer?\n1. Subir emisora.\n2. Bajar emisora.\nRepuesta: ", 2);
           if(respuesta == 1) controlador.subirEmisora();
           else controlador.bajarEmisora();
         }
