@@ -5,6 +5,8 @@ Autor2: Elias Alvarado | 21808
 Fecha: 26 de enero del 2022
 */
 
+import java.text.DecimalFormat;
+
 public class RadioController implements Radio{
   public RadioController(){}
   private boolean encendido = false;
@@ -78,10 +80,11 @@ public class RadioController implements Radio{
   @Override
   public void subirEmisora() {
     if(FM) {
+      DecimalFormat df = new DecimalFormat("###.#");
       if(actualFM == 107.9f)
         actualFM = 87.9f;
       else
-        actualFM += 0.2f;
+      actualFM = Float.parseFloat(df.format(actualFM + 0.2f));
     }else {
       if(actualAM == 1610)
         actualAM = 530;
@@ -92,10 +95,11 @@ public class RadioController implements Radio{
   @Override
   public void bajarEmisora(){
     if(FM) {
+      DecimalFormat df = new DecimalFormat("###.#");
       if(actualFM == 87.9f)
         actualFM = 107.9f;
       else
-        actualFM -= 0.2f;
+      actualFM = Float.parseFloat(df.format(actualFM - 0.2f));
     }else {
       if(actualAM == 530)
         actualAM = 1610;
