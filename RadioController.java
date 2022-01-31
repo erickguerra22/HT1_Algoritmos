@@ -81,7 +81,7 @@ public class RadioController implements Radio{
       if(actualFM == 107.9f)
         actualFM = 87.9f;
       else
-        actualFM += 0.2;
+        actualFM += 0.2f;
     }else {
       if(actualAM == 1610)
         actualAM = 530;
@@ -95,7 +95,7 @@ public class RadioController implements Radio{
       if(actualFM == 87.9f)
         actualFM = 107.9f;
       else
-        actualFM -= 0.2;
+        actualFM -= 0.2f;
     }else {
       if(actualAM == 530)
         actualAM = 1610;
